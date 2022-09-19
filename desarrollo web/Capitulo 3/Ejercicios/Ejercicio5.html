@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--Ejercicio 3.5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3.5</title>
+</head>
+<body style="background-color: #505050;">
+    <font color="#FFFFFF">
+        <header>
+            <p>
+                <a href="../../PaginaPrincipal.html">
+                    <img src="Imagenes/back.png" width="40"
+                         height="40" alt="vinculos" align="left" />
+                </a>
+                
+                <strong>Regresar</strong>
+                
+            </p>
+        </header>
+    <p><strong>3.5</strong> Escriba un elemento(o elementos)de HTML5 para realizar cada una de las siguientes tareas: </p>
+    <p><strong>a)</strong> Se pidío a los estudiantes que clasificaran los alimentos en la cafetería, en una escala del 1 al 10. Use un elemento 
+        meter con texto a su izquierda y su derecha para indicar la calificación promedio fue 7 de 10. </p>
+        <p>1<meter max="10" value="7"></meter>10</p>
+    <p><strong>b)</strong> Cree un elemento details que muestre el texto <strong>"Resultado de la encuesta"</strong> en el elemento summary para la 
+        parte (a). Cuando el usuario haga clic en la flecha enseguida del texto de summary. deberá aparecer un párrafo que
+        explique sobre la encuesta.
+        </p>
+        <p>
+            <details>
+                <summary>Resultado de la encuesta</summary>
+                <ul>
+                    <li>En la encuesta del inciso a) se pidio a los alumos calificaran los alimentos del 1 al 10.</li>
+                    <li>El promedio general termina siendo 7 como se muestra en su respectiba grafica.</li>
+                </ul>
+            </details>
+        </p>
+
+    <p><strong>c)</strong> Cree un elemento input text para el primer nombre. El elemento deberá recibir el enfoque de manera automática
+    al momento de desplegar el formulario en un navegador.</p>
+    <p><label>Primer nombre:
+        <input type="text" id = "primerNombre"/>
+    </label></p>
+    <p><strong>d)</strong> Modifique la parte (c) de modo que se elimine el elemento label y use texto en un elemento placehorder en el 
+    elemento input</p>
+    <p>
+        <input type="text" id = "primerNombre"
+        placeholder="Primer nombre" />
+    <p><strong>e)</strong> Use un elemento datalist para proveer una lista autocomplete para cinco estados.</p>
+    <p><label for="listaTexto">Elija uno de los 5 estados:
+        <input type="text" id="listaTexto" list="estados" />
+        <datalist id="estados">
+            <option value="Veracruz">
+            <option value="Mexico">
+            <option value="Guerrero">
+            <option value="Queretaro">
+            <option value="Yucatan">
+        </datalist>
+    </label></p>
+    <p><strong>f)</strong> Cree un elemento input range que permita al usuario seleccionar un número del 1 al 100</p>
+    <p>Seleccione el Rango
+        0<input type="range" min="0" max="100"/>100
+    </p>
+    <p><strong>g)</strong> Especifique que no debe permitirse el atributo autocomplete en un formulario. Muestre sólo la etiqueta del 
+        apertura del formulario.</p>
+        <form method="post" autocomplete="off">
+            <p>
+                <input type="text" id = "formulario"
+                placeholder="Apertura Formulario" />
+            </p>
+    <p><strong>h)</strong> Use un elemento mark para resaltar el segundo enuncuiado del siguiente párrafo</p>
+    <p>Se pidió a los estudiantes que calificaran los alimentos en la cafetería 
+        <mark>Es una escala del 1 al 10. El resultado promedio fue 7.</mark>
+    </p>
+</body>
+</html>

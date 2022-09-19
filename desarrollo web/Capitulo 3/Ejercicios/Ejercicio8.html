@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Ejercicio 3.8-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3.8</title>
+</head>
+<body style="background-color: #505050;">
+    <font color="#FFFFFF">
+        <header>
+            <p>
+                <a href="../../PaginaPrincipal.html">
+                    <img src="Imagenes/back.png" width="40"
+                         height="40" alt="vinculos" align="left" />
+                </a>
+                
+                <strong>Regresar</strong>
+                
+            </p>
+        </header>
+    <p><strong>3.8 <em>(Creación de un formulario autocoaplete con un elemento datalist) </em></strong> Cree un elemento input autocomplete
+        con un elemento data list asociado que contenga los dias de la semana.
+        </p>
+
+        <form method="post" autocomplete="on">
+            <p><input type="text" list="diassemana" placeholder="Elija un Dia de la Semana">
+            <datalist id="diassemana">
+                <option value="lunes"></option>
+                <option value="Martes"></option>
+                <option value="Miercoles"></option>
+                <option value="Jueves"></option>
+                <option value="Viernes"></option>
+                <option value="Sabado"></option>
+                <option value="Domingo"></option>
+
+            </datalist>
+        </p>
+        </form>
+    
+</body>
+</html>

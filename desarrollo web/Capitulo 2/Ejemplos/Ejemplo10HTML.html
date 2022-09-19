@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<!-- Fig.2.12: Tabla1.html -->
+<!-- Creaciónde Una Tabla Básica -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Una Tabla de HTML5 Simple</title>
+</head>
+<body style="background-color: #505050;">
+    <font color="#FFFFFF">
+        <header>
+            <p>
+                <a href="../../PaginaPrincipal.html">
+                    <img src="Imagenes/back.png" width="40"
+                         height="40" alt="vinculos" align="left" />
+                </a>
+                
+                <strong>Regresar</strong>
+                
+            </p>
+        </header>
+    <!-- Etiqueta Table Abre una Tabla-->
+    <table border="1">
+        <!--La Eqtiqueta <caption> sintetiza el contenido de la tabla-->
+        <caption><strong>Tabla de Frutas (1era Columna) y Sus precios (2da Columna)</strong></caption>
+
+        <thead><!--Lo Introduccido Sale Primero en la Tabla-->
+            <tr><!--Inserta Una Fila En La Tabla-->
+                <th>Fruta</th><!--Inserta Fruta de Encabezado-->
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tfoot><!--Lo Introducido Aparece Lo Ultimo En La Tabla-->
+            <tr>
+                <th>Total</th>
+                <th>3.75</th>
+            </tr>  
+        </tfoot>
+
+        <tbody><!--Dentro del Elemento-->
+            <tr>
+                <td>Manzana</td><!--Inserta celda de datos-->
+                <td>$0.25</td>
+            </tr>
+            
+            <tr>
+                <td>Naranja</td>
+                <td>$0.50</td>
+            </tr>
+            
+            <tr>
+                <td>Plátano</td>
+                <td>$1.00</td>
+            </tr>
+
+            <tr>
+                <td>Piña</td>
+                <td>$2.00</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+</html>

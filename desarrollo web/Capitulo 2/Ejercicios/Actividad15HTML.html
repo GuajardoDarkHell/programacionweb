@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--Ejercicio 2.16-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2.16</title>
+</head>
+<body style="background-color: #505050;">
+    <font color="#FFFFFF">
+        <header>
+            <p>
+                <a href="../../PaginaPrincipal.html">
+                    <img src="Imagenes/back.png" width="40"
+                         height="40" alt="vinculos" align="left" />
+                </a>
+                
+                <strong>Regresar</strong>
+                
+            </p>
+        </header>
+    <p><strong>2.16</strong> una universidad local pidió que creara un documento de HTML5 que permita a los futuros estudiantes
+    universitarios proveer retroalimentación sobre su visita al campus. Su documento de HTML5 debe contener un formulario
+    con campos de texto para un nombre y un correo electrónico. Proporcione casillas de verificación que permitan a los 
+    futuros estudiantes indicar lo que les gustó más sobre el campus. Las casillas de verificación deben incluir: campus,
+    estudiantes, ubicación, ambiente, dormitorioas y deportes. Proporcione además botones de opción que pregunten a los 
+    futuros estudiantes cómo supieron sobre sobre la universidad. las opciones deben incluir: amigos, televisión, internet
+    y otro. Ademas proporcione un área de texto para comentarios adicionales, un botón para enviar y un botón para
+    restablecer. Use post para enviar la información en el formulario a http://www.deitel.com.</p>
+    <h1>Formulario universitario</h1>
+    <p>
+        Llene este Formulario para Ayudarnos 
+        a Mejorar el Sitio.
+    </p>
+    <form method="post" action="http://www.deitel.com">
+        <input type="hidden" name="Destinatario"
+               value="deitel@deitel.com" />
+        <input type="hidden" name="Asunto"
+               value="Formulario de Retroalimentación" />
+        <input type="hidden"name="Redirigir"
+               value="principal.html" />
+        <p><label>
+            Nombre:
+            <input name="Nombre" type="text" size="25" />
+            </label></p>
+            <p><label>
+                Dirección de Correo Electrónico:
+                <input name="email" type="password"size="25" />
+                </label></p>
+            <p>
+            <strong>Cosas que le Gustaron:</strong><br />
+            <label>
+                Campus
+                <input name="CosasGustaron" type="checkbox"
+                       value="Campus" />
+            </label>
+            <label>
+                Estudiantes
+                <input name="CosasGustaron" type="checkbox"
+                       value="Estudiantes" />
+            </label>
+            <label>
+                Ubicación
+                <input name="CosasGustaron" type="checkbox"
+                       value="Ubicación" />
+            </label>
+            <label>
+                Ambiente
+                <input name="CosasGustaron" type="checkbox"
+                       value="Ambiente" />
+            </label>
+            <label>
+                Dormitorias
+                <input name="CosasGustaron" type="checkbox"
+                       value="Dormitorias" />
+            </label>
+            <label>
+                Deportes
+                <input name="CosasGustaron" type="checkbox"
+                       value="Deportes" />
+            </label>
+        </p>
+        <p>
+            <strong>Cómo Llegó a Nuestro Sitio:</strong><br />
+            <label>
+                Amigos
+                <input name="comositio" type="radio"
+                       value="Amigos" checked />
+            </label>
+            <label>
+                Televisión
+                <input name="comositio" type="radio"
+                       value="Televisión" />
+            </label>
+            <label>
+                Internet
+                <input name="comositio" type="radio"
+                       value="Internet" />
+            </label>
+            <label>
+                Otro
+                <input name="comositio" type="radio"
+                       value="Otro" />
+            </label>
+        </p>
+        <p><label>
+            Comentarios:<br />
+            <textarea name="comentarios"
+                      rows="4" cols="36">Deje su Opinión Aquí....</textarea>
+            </label></p>
+        <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </p>
+    </form>
+    
+</body>
+</html>
